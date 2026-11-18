@@ -33,8 +33,91 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Semantic Landmark Skeleton (Populated in Phases 3–6) -->
-    <header id="site-header"></header>
+    <!-- ================= HEADER & STICKY NAVBAR ================= -->
+    <header
+      id="site-header"
+      class="sticky-top bg-white border-bottom shadow-sm"
+    >
+      <nav class="navbar navbar-expand-lg py-3" aria-label="Primary Navigation">
+        <div class="container">
+          <!-- Brand Logo -->
+          <a
+            class="navbar-brand d-flex align-items-center gap-2 brand-logo"
+            href="#"
+          >
+            <span class="brand-icon" aria-hidden="true">
+              <i class="bi bi-bag-heart-fill"></i>
+            </span>
+            <span>Shop<span class="text-accent">Nest</span></span>
+          </a>
+
+          <!-- Cart Icon + Mobile Hamburger Toggler -->
+          <div class="d-flex align-items-center gap-3 order-lg-3">
+            <a
+              href="#featured-products"
+              class="cart-btn position-relative text-dark text-decoration-none"
+              aria-label="Shopping Cart with 2 items"
+            >
+              <i class="bi bi-cart3 fs-4"></i>
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-accent"
+              >
+                2
+              </span>
+            </a>
+
+            <button
+              class="navbar-toggler border-0 shadow-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#shopnestNav"
+              aria-controls="shopnestNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <!-- Collapsible Navigation Links & Search Bar -->
+          <div class="collapse navbar-collapse order-lg-2" id="shopnestNav">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3 fw-medium">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#featured-products">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#categories">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#deals">Deals</a>
+              </li>
+            </ul>
+
+            <!-- Search Input Group -->
+            <form class="d-flex nav-search me-lg-4 mt-3 mt-lg-0" role="search">
+              <div class="input-group">
+                <input
+                  type="search"
+                  class="form-control border-end-0"
+                  placeholder="Search products, brands..."
+                  aria-label="Search products"
+                />
+                <button
+                  class="btn btn-outline-secondary border-start-0 bg-white"
+                  type="submit"
+                  aria-label="Submit search"
+                >
+                  <i class="bi bi-search text-muted"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <main id="main-content"></main>
 

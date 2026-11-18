@@ -99,3 +99,52 @@ h6,
   border-color: var(--accent-color);
   color: #ffffff;
 }
+
+/* ==========================================================================
+   4. STICKY NAVIGATION BAR
+   ========================================================================== */
+.brand-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  letter-spacing: -0.5px;
+}
+
+.brand-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: var(--primary-color);
+  color: var(--bg-white);
+  border-radius: var(--radius-sm);
+  font-size: 1.1rem;
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-main);
+  transition: var(--transition);
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--accent-color);
+}
+
+.nav-search {
+  min-width: 260px;
+}
+
+.nav-search .form-control:focus {
+  box-shadow: none;
+  border-color: #ced4da;
+}
+
+.cart-btn {
+  transition: var(--transition);
+}
+
+.cart-btn:hover {
+  color: var(--accent-color) !important;
+}
