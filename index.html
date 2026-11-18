@@ -551,9 +551,240 @@
           </div>
         </div>
       </section>
-    </main>
-    <footer id="site-footer"></footer>
+      <!-- 4. CATEGORY SHOWCASE SECTION -->
+      <section
+        id="categories"
+        class="py-5 bg-light-subtle"
+        aria-labelledby="categories-heading"
+      >
+        <div class="container">
+          <div class="text-center mb-5">
+            <span class="text-accent fw-semibold text-uppercase small"
+              >Browse Collections</span
+            >
+            <h2 id="categories-heading" class="fw-bold mt-1">
+              Shop by Category
+            </h2>
+          </div>
 
+          <div class="row g-4">
+            <!-- Tile 1: Electronics -->
+            <div class="col-12 col-sm-6 col-lg-3">
+              <a
+                href="#featured-products"
+                class="category-tile d-flex flex-column justify-content-end p-4 text-white text-decoration-none category-electronics"
+              >
+                <span class="badge bg-accent align-self-start mb-2"
+                  >120+ Items</span
+                >
+                <h3 class="h4 fw-bold text-white mb-1">Electronics</h3>
+                <span class="small text-light opacity-75"
+                  >Audio, Smartwatches &amp; Gear
+                  <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i
+                ></span>
+              </a>
+            </div>
+
+            <!-- Tile 2: Clothing -->
+            <div class="col-12 col-sm-6 col-lg-3">
+              <a
+                href="#featured-products"
+                class="category-tile d-flex flex-column justify-content-end p-4 text-white text-decoration-none category-clothing"
+              >
+                <span class="badge bg-accent align-self-start mb-2"
+                  >340+ Items</span
+                >
+                <h3 class="h4 fw-bold text-white mb-1">Clothing</h3>
+                <span class="small text-light opacity-75"
+                  >Everyday Apparel &amp; Basics
+                  <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i
+                ></span>
+              </a>
+            </div>
+
+            <!-- Tile 3: Footwear -->
+            <div class="col-12 col-sm-6 col-lg-3">
+              <a
+                href="#featured-products"
+                class="category-tile d-flex flex-column justify-content-end p-4 text-white text-decoration-none category-footwear"
+              >
+                <span class="badge bg-accent align-self-start mb-2"
+                  >95+ Items</span
+                >
+                <h3 class="h4 fw-bold text-white mb-1">Footwear</h3>
+                <span class="small text-light opacity-75"
+                  >Sneakers, Runners &amp; Casuals
+                  <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i
+                ></span>
+              </a>
+            </div>
+
+            <!-- Tile 4: Books -->
+            <div class="col-12 col-sm-6 col-lg-3">
+              <a
+                href="#featured-products"
+                class="category-tile d-flex flex-column justify-content-end p-4 text-white text-decoration-none category-books"
+              >
+                <span class="badge bg-accent align-self-start mb-2"
+                  >210+ Items</span
+                >
+                <h3 class="h4 fw-bold text-white mb-1">Books</h3>
+                <span class="small text-light opacity-75"
+                  >Design, Tech &amp; Bestsellers
+                  <i class="bi bi-arrow-right ms-1" aria-hidden="true"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. NEWSLETTER SIGNUP SECTION -->
+      <section
+        class="newsletter-section py-5 text-white"
+        aria-labelledby="newsletter-heading"
+      >
+        <div class="container">
+          <div class="row align-items-center justify-content-between g-4">
+            <div class="col-lg-6">
+              <h2 id="newsletter-heading" class="fw-bold text-white mb-2">
+                Get ₹300 Off Your First Order
+              </h2>
+              <p class="mb-0 text-light opacity-75">
+                Join 25,000+ shoppers receiving early access to flash deals, new
+                drops, and style guides.
+              </p>
+            </div>
+            <div class="col-lg-5">
+              <form class="newsletter-form" action="#" method="post">
+                <div class="input-group input-group-lg">
+                  <input
+                    type="email"
+                    class="form-control border-0"
+                    placeholder="Enter your email address"
+                    aria-label="Email address for newsletter"
+                    required
+                  />
+                  <button class="btn btn-accent fw-semibold px-4" type="submit">
+                    Subscribe
+                  </button>
+                </div>
+                <small class="d-block text-light opacity-75 mt-2">
+                  No spam, ever. Unsubscribe anytime with one click.
+                </small>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ================= MULTI-COLUMN FOOTER ================= -->
+    <footer id="site-footer" class="site-footer text-light pt-5 pb-4">
+      <div class="container">
+        <div
+          class="row g-4 pb-4 border-bottom border-secondary border-opacity-25"
+        >
+          <!-- Column 1: About -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <a
+              class="navbar-brand d-inline-flex align-items-center gap-2 brand-logo text-white mb-3"
+              href="#"
+            >
+              <span class="brand-icon bg-accent" aria-hidden="true"
+                ><i class="bi bi-bag-heart-fill"></i
+              ></span>
+              <span>Shop<span class="text-accent">Nest</span></span>
+            </a>
+            <p class="text-secondary small pe-lg-4">
+              ShopNest is your everyday online destination for thoughtfully
+              curated electronics, wardrobe essentials, footwear, and books
+              across India.
+            </p>
+          </div>
+
+          <!-- Column 2: Quick Links -->
+          <div class="col-6 col-md-6 col-lg-2">
+            <h3 class="h6 fw-bold text-uppercase text-white mb-3">
+              Quick Links
+            </h3>
+            <ul class="list-unstyled footer-links small">
+              <li class="mb-2"><a href="#">Home</a></li>
+              <li class="mb-2">
+                <a href="#featured-products">Featured Shop</a>
+              </li>
+              <li class="mb-2"><a href="#categories">Categories</a></li>
+              <li class="mb-2"><a href="#deals">Today's Deals</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Contact -->
+          <div class="col-6 col-md-6 col-lg-3">
+            <h3 class="h6 fw-bold text-uppercase text-white mb-3">
+              Contact Us
+            </h3>
+            <ul class="list-unstyled text-secondary small">
+              <li class="mb-2">
+                <i class="bi bi-geo-alt text-accent me-2" aria-hidden="true"></i
+                >HITEC City, Hyderabad, TS 500081
+              </li>
+              <li class="mb-2">
+                <i
+                  class="bi bi-telephone text-accent me-2"
+                  aria-hidden="true"
+                ></i
+                >+91 40 4852 1900
+              </li>
+              <li class="mb-2">
+                <i
+                  class="bi bi-envelope text-accent me-2"
+                  aria-hidden="true"
+                ></i
+                >support@shopnest.in
+              </li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Social Media -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <h3 class="h6 fw-bold text-uppercase text-white mb-3">Follow Us</h3>
+            <p class="text-secondary small mb-3">
+              Stay connected for daily style drops and flash offers.
+            </p>
+            <div class="d-flex gap-2">
+              <a href="#" class="social-link" aria-label="ShopNest on Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="social-link" aria-label="ShopNest on X"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a href="#" class="social-link" aria-label="ShopNest on Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="social-link" aria-label="ShopNest on YouTube"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Copyright Bar -->
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between align-items-center pt-4 small text-secondary"
+        >
+          <p class="mb-2 mb-sm-0">
+            &copy; 2026 ShopNest India Pvt. Ltd. All rights reserved.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-secondary text-decoration-none"
+              >Privacy Policy</a
+            >
+            <a href="#" class="text-secondary text-decoration-none"
+              >Terms of Service</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- Bootstrap 5.3 JS Bundle (Popper included) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

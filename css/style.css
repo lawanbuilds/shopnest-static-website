@@ -199,3 +199,107 @@ h6,
 .product-card:hover .product-img {
   transform: scale(1.06);
 }
+
+/* ==========================================================================
+   7. CATEGORY SHOWCASE TILES
+   ========================================================================== */
+.category-tile {
+  height: 280px;
+  border-radius: var(--radius-md);
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.category-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 0.1) 0%,
+    rgba(15, 23, 42, 0.85) 100%
+  );
+  transition: var(--transition);
+}
+
+.category-tile > * {
+  position: relative;
+  z-index: 1;
+}
+
+.category-tile:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+.category-electronics {
+  background-image: url("https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=600&q=80");
+}
+
+.category-clothing {
+  background-image: url("https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80");
+}
+
+.category-footwear {
+  background-image: url("https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=600&q=80");
+}
+
+.category-books {
+  background-image: url("https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=80");
+}
+
+/* ==========================================================================
+   8. NEWSLETTER SIGNUP SECTION
+   ========================================================================== */
+.newsletter-section {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--primary-light) 100%
+  );
+}
+
+.newsletter-form .form-control:focus {
+  box-shadow: none;
+}
+
+/* ==========================================================================
+   9. MULTI-COLUMN FOOTER
+   ========================================================================== */
+.site-footer {
+  background-color: #090e1a;
+}
+
+.footer-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--accent-color);
+  padding-left: 4px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: var(--bg-white);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.social-link:hover {
+  background-color: var(--accent-color);
+  color: var(--bg-white);
+  transform: translateY(-3px);
+}
