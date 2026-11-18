@@ -1,0 +1,101 @@
+/* ==========================================================================
+   1. DESIGN TOKENS (:root Variables)
+   ========================================================================== */
+:root {
+  /* Brand & Accent Colors */
+  --primary-color: #0f172a; /* Deep Slate Navy */
+  --primary-light: #1e293b; /* Charcoal Slate */
+  --accent-color: #f97316; /* Vibrant Coral Orange */
+  --accent-hover: #ea580c; /* Darker Coral for Hover */
+
+  /* Neutral Surfaces & Text */
+  --bg-white: #ffffff;
+  --bg-light: #f8fafc;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+
+  /* Layout & Effects */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --shadow-sm: 0 4px 12px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 12px 24px rgba(15, 23, 42, 0.12);
+  --transition: all 0.25s ease;
+}
+
+/* ==========================================================================
+   2. GLOBAL RESET & BASE TYPOGRAPHY
+   ========================================================================== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  color: var(--text-main);
+  background-color: var(--bg-white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.brand-logo {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--primary-color);
+}
+
+/* ==========================================================================
+   3. REUSABLE UTILITY & BUTTON CLASSES
+   ========================================================================== */
+.text-accent {
+  color: var(--accent-color) !important;
+}
+
+.bg-accent {
+  background-color: var(--accent-color) !important;
+}
+
+.bg-light-subtle {
+  background-color: var(--bg-light) !important;
+}
+
+.fw-extrabold {
+  font-weight: 800;
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #ffffff;
+  transition: var(--transition);
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-primary-dark {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+
+.btn-primary-dark:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: #ffffff;
+}
