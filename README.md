@@ -22,3 +22,7 @@ A responsive, semantic HTML5 and CSS3 e-commerce storefront built with Bootstrap
 
 1. Clone or download the repository.
 2. Open `index.html` directly in any modern browser or serve via VS Code **Live Server**.
+
+## Live Demo
+
+Explore the live deployed storefront: [ShopNest Live Site](https://lawanbuilds.github.io/shopnest-static-website/)
