@@ -303,3 +303,66 @@ h6,
   color: var(--bg-white);
   transform: translateY(-3px);
 }
+
+/* ==========================================================================
+   10. RESPONSIVE MEDIA QUERIES (Tablet & Mobile Breakpoints)
+   ========================================================================== */
+
+/* Tablet Breakpoint (768px – 991.98px) */
+@media (max-width: 991.98px) {
+  .hero-banner {
+    min-height: 460px;
+    padding: 4rem 0;
+  }
+
+  .nav-search {
+    min-width: 100%;
+  }
+}
+
+/* Mobile Breakpoint (less than 768px) */
+@media (max-width: 767.98px) {
+  .hero-banner {
+    min-height: 400px;
+    padding: 3rem 0;
+    text-align: center;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(15, 23, 42, 0.88) 0%,
+        rgba(15, 23, 42, 0.82) 100%
+      ),
+      url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=80")
+        center/cover no-repeat;
+  }
+
+  .hero-banner .d-flex {
+    justify-content: center;
+  }
+
+  .hero-banner h1 {
+    font-size: 2rem;
+  }
+
+  .product-img-wrapper {
+    height: 210px;
+  }
+
+  .category-tile {
+    height: 220px;
+  }
+
+  .newsletter-form .input-group-lg {
+    flex-direction: column;
+  }
+
+  .newsletter-form .form-control,
+  .newsletter-form .btn {
+    width: 100%;
+    border-radius: var(--radius-sm) !important;
+  }
+
+  .newsletter-form .btn {
+    margin-top: 0.5rem;
+  }
+}
